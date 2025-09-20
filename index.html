@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMORPG Game Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    
+    <!-- Game HUD -->
+    <div id="gameHUD">
+        <div class="hud-section">
+            <h3>Player Info</h3>
+            <div id="playerName">Loading...</div>
+            <div id="playerPosition">Position: Loading...</div>
+        </div>
+        
+        <div class="hud-section">
+            <h3>Game Status</h3>
+            <div id="connectionStatus">Connecting...</div>
+            <div id="playerCount">Players: 0</div>
+        </div>
+        
+        <div class="hud-section">
+            <h3>Controls</h3>
+            <div>Arrow Keys: Move</div>
+            <div>Click: Move to location</div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>

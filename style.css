@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: #000;
+}
+
+#gameCanvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    cursor: crosshair;
+}
+
+/* Game HUD */
+#gameHUD {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 1000;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hud-section {
+    margin-bottom: 15px;
+}
+
+.hud-section:last-child {
+    margin-bottom: 0;
+}
+
+.hud-section h3 {
+    margin: 0 0 8px 0;
+    color: #4CAF50;
+    font-size: 16px;
+    border-bottom: 1px solid #4CAF50;
+    padding-bottom: 4px;
+}
+
+.hud-section div {
+    margin: 4px 0;
+    color: #E0E0E0;
+}
+
+#connectionStatus {
+    color: #FFC107;
+}
+
+#connectionStatus.connected {
+    color: #4CAF50;
+}
+
+#connectionStatus.disconnected {
+    color: #F44336;
+}
